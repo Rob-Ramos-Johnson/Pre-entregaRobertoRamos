@@ -40,11 +40,6 @@ body {
 
 .contenedor {
     max-width: 120rem;
-    /* margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto; */
-    /* margin: 0 auto 0 auto; */
     margin: 0 auto;
 }
 
@@ -88,6 +83,7 @@ body {
 .carousel-control-next-icon {
     filter: invert(100%);
 }
+
 .carousel-caption h5 {
     font-size: 2.5rem;
 }
@@ -96,10 +92,9 @@ body {
     font-size: 1.5rem;
 }
 
-
-
 /* Tipografía */
-h1 {
+
+h1, {
     font-size: 3.8rem;
 }
 
@@ -203,7 +198,6 @@ h3 {
     display: flex;
     align-items: flex-end;
 }
-
 
 /**Servicios**/
 @media (min-width: 768px) {
@@ -309,7 +303,7 @@ h3 {
 /**Nosotros**/
 /**Contenido equipo**/
 .equipo {
-    background-image: url(../assets/equipo.jpg);
+    background-image: url(../assets/equipo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
@@ -322,19 +316,6 @@ h3 {
     scroll-snap-stop: always;
 }
 
-
-/* Tipografía nosotros*/
-/* h1 {
-    font-size: 3.8rem;
-}
-
-h2 {
-    font-size: 2.8rem;
-}
-
-.nosotros{
-    font-size: 1.8rem;
-} */
 
 .nosotros {
     text-align: center;
@@ -349,19 +330,11 @@ h2 {
 }
 
 /**Contenido estudio**/
-
 .estudio {
     text-align: center;
 }
 
-.estudio,
-.Nuestro .estudio {
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-}
-
 /**Galería**/
-
 .galeria {
     scroll-snap-align: center;
     scroll-snap-stop: always;
@@ -371,3 +344,18 @@ h2 {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
+
+/**Diseños**/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
